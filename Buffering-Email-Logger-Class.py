@@ -1,3 +1,6 @@
+import logging
+from datetime import datetime
+from logging.handlers import BufferingHandler
 from email.header import Header
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
