@@ -12,12 +12,12 @@ The **BufferingSMTPHandler** class is a custom logging handler that extends the 
 ### Methods:
 - **__init__**(*self, email_settings, paths*): Initializes the BufferingSMTPHandler with email settings and paths.
 
--- **email_settings** (*dict*): A dictionary containing email settings to use.
--- **paths** (*str*): The path to the save file for the state jar.
+  - **email_settings** (*dict*): A dictionary containing email settings to use.
+  - **paths** (*str*): The path to the save file for the state jar.
 - **flush**(*self, force=False, custom_alerts=None*): Flushes the buffer if it exceeds the threshold or if forced.
 
--- **force** (*bool*): If True, forces the buffer to flush regardless of its size.
--- **custom_alerts** (*list*): A list of custom alert messages to include in the email body.
+  - **force** (*bool*): If True, forces the buffer to flush regardless of its size.
+  - **custom_alerts** (*list*): A list of custom alert messages to include in the email body.
 - **save**(*self*): Saves the buffer for later use (if it isn't full yet or can't be emptied).
 
 - **shouldFlush**(*self, record*): Returns False to stop automatic flushing by the buffering handler by default (flushing is done manually).
