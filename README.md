@@ -1,5 +1,5 @@
 # Email-Buffer-Save-State
-An email buffer class and corresponding save state class for python scripts
+A custom buffering email loggger class and corresponding save state class for python scripts.
 
 ## BufferingSMTPHandler Class
 The **BufferingSMTPHandler** class is a custom logging handler that extends the **BufferingHandler** class. It is designed to buffer log records and send them as a single email when the buffer is flushed. This class is particularly useful for sending error alerts via email in a batch, rather than sending an email for each individual log record.
